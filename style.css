@@ -36,6 +36,16 @@ body {
   transform: scale(1.05);
 }
 
+h2 span {
+  color: #f39c12;
+}
+
+.titulo {
+  color: #1f3a93;
+  font-size: 40px;
+  text-align: center;
+}
+
 /* ESTILO DO CABEÇALHO */
 
 header {
@@ -99,9 +109,9 @@ section .topo-do-site .flex {
   padding-left: 20px;
 }
 .topo-do-site .img-topo-site img {
-    position: relative;
-    animation: flutar 2s ease-in-out infinite alternate;
-    border-radius: 30px;
+  position: relative;
+  animation: flutar 2s ease-in-out infinite alternate;
+  border-radius: 30px;
 }
 
 @keyframes flutar {
@@ -111,4 +121,37 @@ section .topo-do-site .flex {
   100% {
     top: 30px;
   }
+}
+
+/* ESTILO DAS ESPECIALIDES */
+
+.especialidades {
+  padding: 40px 4%;
+}
+
+.especialidades .flex {
+  gap: 40px;
+}
+
+.especialidades .especialidades-box {
+  color: #1f3a93;
+  padding: 40px;
+  margin-top: 45px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.especialidades .especialidades-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #f39d128b;
+}
+
+.especialidades .especialidades-box i {
+  font-size: 55px;
+  color: #2a2a2a;
+}
+
+.especialidades .especialidades-box h3 {
+  font-size: 26px;
+  margin: 15px 0;
 }
