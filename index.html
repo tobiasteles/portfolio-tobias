@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agêcia TT</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,22 +22,22 @@
       <div class="interface">
         <!--INICIO LOGO-->
         <div class="logo">
-          <a href="#">
-            <img src="img/logo.webp" alt="Logo TT" width="75px" />
+          <a href="index.html">
+            <img src="img/logo.webp" alt="Logo TT" width="100px" />
           </a>
         </div>
         <!--FIM LOGO-->
         <nav class="menu-desktop">
           <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Serviços</a></li>
+            <li><a href="#topo-do-site">Início</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portifolio">Portifólio</a></li>
           </ul>
         </nav>
 
         <div class="btn-contato">
-          <a href="#">
+          <a href="#formulario">
             <button>Contato</button>
           </a>
         </div>
@@ -46,7 +46,7 @@
     </header>
     <main>
       <!-- INICIO TOPO DO SITE -->
-      <section class="topo-do-site">
+      <section class="topo-do-site" id="topo-do-site">
         <!-- INICIO INTERFACE -->
         <div class="interface">
           <div class="flex">
@@ -61,7 +61,7 @@
                 sempre com dedicação e prazer<span>.</span>
               </p>
               <div class="btn-contato">
-                <a href="#">
+                <a href="#formulario">
                   <button>Entre em Contato</button>
                 </a>
               </div>
@@ -75,7 +75,7 @@
       </section>
       <!-- FIM TOPO DO SITE -->
       <!-- INICIO ESPECIALIDADES -->
-      <section class="especialidades">
+      <section class="especialidades" id="especialidades">
         <div class="interface">
           <h2 class="titulo">Minhas <span>Especialidades.</span></h2>
         </div>
@@ -112,16 +112,14 @@
       </section>
       <!-- FIM ESPECIALIDADES -->
       <!--INICIO SOBRE  -->
-      <section class="sobre">
+      <section class="sobre" id="sobre">
         <div class="interface">
           <div class="flex">
             <div class="img-sobre">
               <img src="img/pessoa2.jpg" alt="Eu" width="250px" />
             </div>
             <div class="txt-sobre">
-              <h2>
-                Olá,<br><span>Sou Tobias</span>
-              </h2>
+              <h2>Olá,<br /><span>Sou Tobias</span></h2>
               <p>
                 Sou Tobias, desenvolvedor web em início de carreira e professor
                 de física. A programação começou como uma curiosidade, mas
@@ -137,15 +135,82 @@
                 continuar aprendendo e aprimorando minhas habilidades."
               </p>
               <div class="btn-social">
-                <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
-                <a href="#"><button><i class="bi bi-github"></i></button></a>
+                <a href="https://www.instagram.com/tobias.teles/"
+                  ><button><i class="bi bi-instagram"></i></button
+                ></a>
+                <a href="www.linkedin.com/in/tobias-teles"
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+                <a href="https://github.com/tobiasteles"
+                  ><button><i class="bi bi-github"></i></button
+                ></a>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!--FIM SOBRE  -->
+      <!-- INICIO PORTIFOLIO -->
+      <section class="portifolio" id="portifolio">
+        <div class="interface">
+          <h2 class="titulo">Meu <span>Portifólio.</span></h2>
+          <div class="flex">
+            <div class="img-port" style="background-image: url(img/site_edukhan.png);">
+              <div class="overlay">Loja Virtual de Prêmios Edukhan</div>
+            </div>
+            <div class="img-port" style="background-image: url(img/site_edukhan.png);">
+              <div class="overlay">Projeto 2</div>
+            </div>
+            <div class="img-port" style="background-image: url(img/site_edukhan.png);">
+              <div class="overlay">Projeto 3</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIM PORTIFOLIO -->
+
+      <!-- INICIO FORMULARIO -->
+       <div class="formulario" id="formulario">
+        <div class="interface">
+          <h2 class="titulo">Fala <span>Comigo.</span></h2>
+          <form action="">
+            <input type="text" name="" id="" placeholder="Seu Nome:" required>
+            <input type="text" name="" id="" placeholder="Seu Email:" required>
+            <input type="text" name="" id="" placeholder="Seu Celular:">
+            <textarea name="" id="" placeholder="Sua Mensagem:" required></textarea>
+            <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+          </form>
+        </div>
+       </div>
+       <!-- FIM FORMULARIO -->
     </main>
+    <!-- INICIO RODAPE -->
+    <footer>
+      <div class="interface">
+        <div class="line-footer">
+          <div class="flex">
+        <div class="logo-footer">
+          <img src="img/logo.webp" alt="logo" width="75px">
+        </div>  
+        <div class="btn-social">
+          <a href="https://www.instagram.com/tobias.teles/"
+            ><button><i class="bi bi-instagram"></i></button
+          ></a>
+          <a href="www.linkedin.com/in/tobias-teles"
+            ><button><i class="bi bi-linkedin"></i></button
+          ></a>
+          <a href="https://github.com/tobiasteles"
+            ><button><i class="bi bi-github"></i></button
+          ></a>
+        </div>
+          </div>
+        </div>
+        </div>
+        <div class="line-footer">
+          <p><i class="bi bi-envelope-at-fill"></i> <a href="mailto: tobias.teles@gmail.com">tobias.teles@gmail.com</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- FIM RODAPE -->
   </body>
 </html>
