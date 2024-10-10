@@ -315,7 +315,11 @@ footer .flex {
 }
 
 footer .line-footer {
-pad: ;
+  padding: 20px 0;
+}
+
+.borda {
+  border-bottom: 2px solid #f39c12;
 }
 
 footer .line-footer p i {
@@ -326,4 +330,78 @@ footer .line-footer p i {
 footer .line-footer p a {
   color: #f39c12;
   text-decoration: none;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1020px) {
+  /* GERAL */
+  .flex {
+    flex-direction: column;
+  }
+  .topo-do-site .flex {
+    flex-direction: column-reverse;
+  }
+
+  /* CABEÇALHO */
+  .menu-desktop,
+  .btn-contato {
+    display: none;
+  }
+  /* TOPO DO SITE */
+  .topo-do-site h1 {
+    font-size: 30px;
+  }
+  .topo-do-site {
+    padding: 20px 8%;
+  }
+  .topo-do-site .img-topo-site img {
+    width: 100%;
+  }
+  .topo-do-site .flex {
+    gap: 40px;
+  }
+  /* ESPECIALIDADES */
+  .especialidades {
+  padding: 40px 8%;
+  }
+  h2.titulo {
+    font-size: 34px;
+    line-height: 30px;
+    align-items: center;
+  }
+  /* SOBRE */
+  .sobre {
+    padding: 80px 8%;
+  }
+  .sobre .txt-sobre h2 {
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .btn-social {
+    text-align: center;
+  }
+  .img-sobre img {
+    width: 100%;
+  }
+  /* PORTIFOLIO */
+  .portifolio {
+    padding: 80px 8%;
+  }
+  .img-port {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .portifolio .flex {
+    gap: 60px;
+  }
+  /* RODAPE */
+  footer .flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+  footer .line-footer {
+    text-align: center;
+  }
 }
