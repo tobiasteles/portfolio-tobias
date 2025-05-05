@@ -20,23 +20,45 @@ body {
   display: flex;
 }
 
-.btn-contato button {
-  padding: 10px 40px;
-  font-size: 18px;
-  font-weight: 600;
-  background-color: #f39c12;
-  border: 0;
-  border-radius: 30px;
+button {
   cursor: pointer;
   transition: 0.2s;
 }
 
-.btn-contato button:hover {
+button:hover {
   box-shadow: 0px 0px 8px #87590f;
   transform: scale(1.05);
 }
 
-h2 span {
+.btn-contato button,
+.btn-social button,
+form .btn-enviar input {
+  background-color: #f39c12;
+  border: 0;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+}
+
+.btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 25px;
+  margin: 0 5px;
+}
+
+form .btn-enviar input {
+  width: 120px;
+  font-weight: 700;
+}
+
+h2 span,
+.topo-do-site .txt-topo-site h1 span {
   color: #f39c12;
 }
 
@@ -46,25 +68,7 @@ h2 span {
   text-align: center;
 }
 
-button:hover {
-  box-shadow: 0px 0px 8px #87590f;
-  transform: scale(1.05);
-}
-
-.btn-social button {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: none;
-  background-color: #f39c12;
-  font-size: 25px;
-  cursor: pointer;
-  margin: 0 5px;
-  transition: 0.2s;
-}
-
 /* ESTILO DO CABEÇALHO */
-
 header {
   padding: 40px 4%;
 }
@@ -97,13 +101,11 @@ header nav ul li {
 }
 
 /* ESTILO DO TOPO DO SITE */
-
 section .topo-do-site {
   padding: 40px 4%;
 }
 
 section .topo-do-site .flex {
-  display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
@@ -116,15 +118,12 @@ section .topo-do-site .flex {
   line-height: 40px;
 }
 
-.topo-do-site .txt-topo-site h1 span {
-  color: #f39c12;
-}
-
 .topo-do-site .txt-topo-site p {
   color: #2a2a2a;
   margin: 40px 0;
   padding-left: 20px;
 }
+
 .topo-do-site .img-topo-site img {
   position: relative;
   animation: flutar 2s ease-in-out infinite alternate;
@@ -140,8 +139,7 @@ section .topo-do-site .flex {
   }
 }
 
-/* ESTILO DAS ESPECIALIDES */
-
+/* ESTILO DAS ESPECIALIDADES */
 .especialidades {
   padding: 40px 4%;
 }
@@ -174,10 +172,10 @@ section .topo-do-site .flex {
 }
 
 /* ESTILO DO SOBRE */
-
 .sobre {
   padding: 80px 4%;
 }
+
 .sobre .img-sobre img {
   border-radius: 30px;
 }
@@ -202,12 +200,12 @@ section .topo-do-site .flex {
   text-align: justify;
 }
 
-/* ESTILO PORTIFOLIO */
-
+/* ESTILO PORTFOLIO */
 .portifolio {
   padding: 80px 4%;
   box-shadow: 0 0 40px 10px #f39c12;
 }
+
 .portifolio .flex {
   justify-content: space-around;
   margin-top: 60px;
@@ -221,7 +219,6 @@ section .topo-do-site .flex {
   background-color: #f39c12;
   transition: 8s;
   border-radius: 25px;
-  cursor: pointer;
   position: relative;
 }
 
@@ -253,7 +250,6 @@ section .topo-do-site .flex {
 }
 
 /* ESTILO FORMULARIO */
-
 .formulario {
   padding: 80px 4%;
 }
@@ -285,26 +281,7 @@ form textarea {
   max-height: 200px;
 }
 
-form .btn-enviar {
-  margin-top: 20px;
-  text-align: center;
-}
-
-form .btn-enviar input {
-  width: 120px;
-  background-color: #f39c12;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-form .btn-enviar input:hover {
-  box-shadow: 0px 0px 8px #87590f;
-  transform: scale(1.05);
-}
-
 /* ESTILO RODAPE */
-
 footer {
   padding: 60px 4%;
   box-shadow: 0 0 40px 10px #f39c12;
@@ -334,252 +311,205 @@ footer .line-footer p a {
 
 /* RESPONSIVIDADE */
 @media screen and (max-width: 1020px) {
-  /* GERAL */
   .flex {
     flex-direction: column;
   }
+
   .topo-do-site .flex {
     flex-direction: column-reverse;
   }
 
-  /* CABEÇALHO */
   .menu-desktop,
   .btn-contato {
     display: none;
   }
-  /* TOPO DO SITE */
+
   .topo-do-site h1 {
     font-size: 30px;
   }
+
   .topo-do-site {
     padding: 20px 8%;
   }
+
   .topo-do-site .img-topo-site img {
     width: 100%;
   }
+
   .topo-do-site .flex {
     gap: 40px;
   }
-  /* ESPECIALIDADES */
+
   .especialidades {
     padding: 40px 8%;
   }
+
   h2.titulo {
     font-size: 34px;
     line-height: 30px;
     align-items: center;
   }
-  /* SOBRE */
+
   .sobre {
     padding: 80px 8%;
   }
+
   .sobre .txt-sobre h2 {
     font-size: 34px;
     line-height: 35px;
     text-align: center;
   }
+
   .btn-social {
     text-align: center;
   }
+
   .img-sobre img {
     width: 100%;
   }
-  /* PORTIFOLIO */
+
   .portifolio {
     padding: 80px 8%;
   }
+
   .img-port {
     width: 100%;
     max-width: 360px;
     margin: 0 auto;
   }
+
   .portifolio .flex {
     gap: 60px;
   }
-  /* RODAPE */
+
   footer .flex {
     flex-direction: column;
     gap: 30px;
   }
+
   footer .line-footer {
     text-align: center;
   }
 }
+
 @media screen and (max-width: 800px) {
-  /* GERAL */
-  .flex {
-    flex-direction: column;
-  }
-  .topo-do-site .flex {
-    flex-direction: column-reverse;
-  }
-
-  /* CABEÇALHO */
-  .menu-desktop,
-  .btn-contato {
-    display: none;
-  }
-
-  /* TOPO DO SITE */
   .topo-do-site h1 {
-    font-size: 28px; /* Ajuste para ficar menor em telas menores */
-  }
-  .topo-do-site {
-    padding: 20px 5%; /* Padding um pouco menor */
-  }
-  .topo-do-site .img-topo-site img {
-    width: 100%;
-  }
-  .topo-do-site .flex {
-    gap: 30px; /* Gap menor */
+    font-size: 28px;
   }
 
-  /* ESPECIALIDADES */
+  .topo-do-site {
+    padding: 20px 5%;
+  }
+
+  .topo-do-site .flex {
+    gap: 30px;
+  }
+
   .especialidades {
     padding: 30px 5%;
   }
+
   h2.titulo {
-    font-size: 30px; /* Título menor */
+    font-size: 30px;
     line-height: 28px;
-    text-align: center; /* Corrigido */
+    text-align: center;
   }
 
-  /* SOBRE */
   .sobre {
-    padding: 60px 5%; /* Padding reduzido */
+    padding: 60px 5%;
   }
+
   .sobre .txt-sobre h2 {
     font-size: 30px;
     line-height: 32px;
     text-align: center;
   }
-  .btn-social {
-    text-align: center;
-  }
-  .img-sobre img {
-    width: 100%;
-  }
 
-  /* PORTFOLIO */
   .portifolio {
     padding: 60px 5%;
   }
+
   .img-port {
-    width: 100%;
-    max-width: 320px; /* Tamanho máximo ajustado */
-    margin: 0 auto;
-  }
-  .portifolio .flex {
-    gap: 50px; /* Gap menor */
+    max-width: 320px;
   }
 
-  /* RODAPÉ */
+  .portifolio .flex {
+    gap: 50px;
+  }
+
   footer .flex {
-    flex-direction: column;
     gap: 20px;
   }
-  footer .line-footer {
+}
+
+@media screen and (max-width: 600px) {
+  .topo-do-site h1 {
+    font-size: 24px;
+  }
+
+  .topo-do-site {
+    padding: 15px 4%;
+  }
+
+  .topo-do-site .flex {
+    gap: 20px;
+  }
+
+  .especialidades {
+    padding: 20px 4%;
+  }
+
+  h2.titulo {
+    font-size: 26px;
+    line-height: 26px;
     text-align: center;
   }
-}
-@media screen and (max-width: 600px) {
-  /* GERAL */
-  .flex {
-    flex-direction: column;
-  }
-  .topo-do-site .flex {
-    flex-direction: column-reverse;
-  }
 
-  /* CABEÇALHO */
-  .menu-desktop,
-  .btn-contato {
-    display: none;
-  }
-
-  /* TOPO DO SITE */
-  .topo-do-site h1 {
-    font-size: 24px; /* Título menor para telas pequenas */
-  }
-  .topo-do-site {
-    padding: 15px 4%; /* Padding reduzido */
-  }
-  .topo-do-site .img-topo-site img {
-    width: 100%;
-  }
-  .topo-do-site .flex {
-    gap: 20px; /* Gap menor */
-  }
-
-  /* ESPECIALIDADES */
-  .especialidades {
-    padding: 20px 4%; /* Padding menor */
-  }
-  h2.titulo {
-    font-size: 26px; /* Fonte reduzida para telas menores */
-    line-height: 26px;
-    text-align: center; /* Corrigido */
-  }
-
-  /* SOBRE */
   .sobre {
     padding: 40px 4%;
   }
+
   .sobre .txt-sobre h2 {
-    font-size: 28px; /* Ajustado para telas pequenas */
+    font-size: 28px;
     line-height: 30px;
     text-align: center;
   }
-  .btn-social {
-    text-align: center;
-  }
-  .img-sobre img {
-    width: 100%;
-  }
 
-  /* PORTFOLIO */
   .portifolio {
     padding: 50px 4%;
   }
+
   .img-port {
-    width: 100%;
-    max-width: 280px; /* Reduzido o tamanho máximo */
-    margin: 0 auto;
-  }
-  .portifolio .flex {
-    gap: 40px; /* Gap reduzido */
+    max-width: 280px;
   }
 
-  /* RODAPÉ */
-  footer .flex {
-    flex-direction: column;
-    gap: 15px; /* Gap menor no rodapé */
+  .portifolio .flex {
+    gap: 40px;
   }
-  footer .line-footer {
-    text-align: center;
+
+  footer .flex {
+    gap: 15px;
   }
 }
+
 @media screen and (max-width: 768px) {
-  /* Ajustes para telas menores (celulares) */
   .portifolio {
     padding: 40px 5%;
   }
+
   .portifolio .flex {
     gap: 30px;
     flex-direction: column;
   }
+
   .img-port {
     max-width: 100%;
   }
-  .topo-do-site h1 {
-    font-size: 28px;
-  }
-  h2.titulo {
+
+  .topo-do-site h1,
+  h2.titulo,
+  .sobre .txt-sobre h2 {
     font-size: 28px;
     line-height: 28px;
-  }
-  .sobre .txt-sobre h2 {
-    font-size: 30px;
-    line-height: 32px;
   }
 }
